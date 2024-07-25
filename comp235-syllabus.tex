@@ -8,66 +8,16 @@
 \setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
 
-\title{Syllabus \\ COMP 235 \\ Introduction to Systems Programming \\ \textit{Remote Learning Edition}}
+\title{Syllabus \\ COMP 235 \\ Introduction to Systems Programming}
 \author{  }
-\date{Fall 2020}
+\date{Fall 2023}
 
 \begin{document}
 \maketitle
 
-\section{Remote Learning Expectations}
-
-Due to the ongoing COVID-19 pandemic, this course will be delivered remotely. The plan
-is to retain most of the regular meetings and opporotunities for help and direct instrution
-but to carry out these activities via online tools. Here's what that means, what you can expect,
-and what will be expected of you for this mode of delivery.
-
-\begin{itemize}
-  \item Remote contant information for the instructor and Zoom meeting links will be posted to the
-  course Moodle.
-
-  \item Assignments will be posted and submitted via Moodle or a similar online platform.
-
-  \item Class and Lab sessions will meet at the usual time but will be carried out
-  via Zoom. \textit{Attendance expectations for these sessions are the same as
-  if the class were meeting in person.}
-
-  \item Prior to class meetings, students will be given reading assignments and possibly
-  pre-recorded videos to watch. A short reading quiz and homework problems will often
-  accompany the assignment as well. These assignments are expected to be done prior to
-  class and will be the way you can expect to encounter and explore new ideas in the course.
-  Class meetings and lab sessions will be used to clarify these ideas and test our
-  shared understanding of these ideas through additional problems. Class is being
-  organized this way in part to make it easier for individuals or the class as a whole
-  to transition to a more asynchronous setting should the need arrise.
-
-  \item Expect most class sessions to be recorded for the benefit of students that
-  are unable to attend class due to an excused absense or illness. If you do not wish
-  to be recorded, please contant the instructor ASAP to work something out.
-
-  \item You are not required to use video and audio during the class meetings, but it is,
-  however, encouraged. The chat channel will be monitored and used during class in order
-  to facilitate those without audio. If you choose to use audio, please try to keep
-  microphones muted unless you are speaking. If you choose to use video, please ensure
-  your space and background do not contain inapropriate nor offensive material. (Just
-  assume one of my kids is going to see it.)
-
-  \item Office hours will be carried out via Zoom. Whenever possible, give the
-  instructor a heads up if you need or want to meet. If you log into the Zoom meeting
-  and the session isn't running or nobody is there, then email or txt and the instructor
-  will hop right on.
-
-\end{itemize}
-
-If you have any concerns about getting access to the technology you need to keep up with
-remote meetings or generally have questions about class exceptions for this semseter,
-then please do not hesitate to ask. The goal here is flexiblity and we try to make
-things work for whatever you situation happens to be.
-
-
 \section{Logistics}
 \begin{itemize}
-\item \textbf{Where: } Center for Science and Business (CSB), Room 309\footnotemark[1]
+\item \textbf{Where: } Center for Science and Business (CSB), Room 309
 \item \textbf{When: } MWF 1--1:50pm
 \item \textbf{Instructor: } Logan Mayfield
 \begin{itemize}
@@ -75,15 +25,13 @@ things work for whatever you situation happens to be.
 \item \textit{Phone: } 309-457-2200 % chktex 8
 \item \textit{Website: } \url{http://jlmayfield.github.io/}
 \item \textit{Email: } lmayfield \textit{at} monmouthcollege \textit{dot} edu
-\item \textit{Office Hours: }  By appointment.
+\item \textit{Office Hours: }  M 2-3pm. TuTh 10-11 am. F 11am-12pm. By appointment.
 \end{itemize}
-%\item \textbf{Website: } \url{http://jlmayfield.github.io/teaching/COMP235/}
+\item \textbf{Website: } \url{http://jlmayfield.github.io/teaching/COMP235/}
 \item \textbf{Credits: } 1 course credit
 \end{itemize}
 \emph{Note: This Syllabus is subject to change based on specific class needs. Significant deviations from the syllabus will be discussed in class.}
 
-\footnotetext[1]{This room will not be used for meetings but will be reserved for this
-class and contains computers should you need or want them.}
 
 \section{Description, Content, and Learning Goals}
 
@@ -103,12 +51,11 @@ majority of chapters 1-9 of the text.
 
 \begin{center}
 \begin{tabular}{ll}
-\(\bullet\) Basics of C & \(\bullet\) Memory Hierarchy\\
-\(\bullet\) Tour of Systems & \(\bullet\) Linking\\
-\(\bullet\) Data Representations & \(\bullet\) Exceptional Control Flow (as time allows)\\
-\(\bullet\) Machine Language & \(\bullet\) Virtual Memory\\
-\(\bullet\) Code Optimization & \(\bullet\) Processor Architecture (as time allows)\\
-\(\bullet\) x86 Assembly Language & \(\bullet\) Dynamic Memory\\
+\(\bullet\) Basics of C & \(\bullet\) Basics of the CLI \\
+\(\bullet\) Tour of Systems (ch 1) & \(\bullet\) Data Representations (ch 2)\\
+\(\bullet\) Machine Language (ch 5) & \(\bullet\) Code Optimization (ch 5) \\
+\(\bullet\) The Memory Hierarchy (ch 6) & \(\bullet\) Virtual and Dynamic Memory (ch 9) \\
+\(\bullet\) Exceptional Control Flow (as time allows) (ch 8) & \(\bullet\) Linking (ch 7)\\
 \end{tabular}
 \end{center}
 
@@ -119,12 +66,25 @@ Bryant, Randal E. and O'Hallaron, Davir R.
 \textit{Computer Systems: A Programmer's Perspective}. 3rd Edition. Pearson. 2016. ISBN-13: 978-0134092669.
 \end{quote}
 
+\begin{quote}
+Shotts, William E., \textit{Learning the Shell}. 2000-2023, William E. Shotts, Jr.
+\url{https://linuxcommand.org/lc3_learning_the_shell.php}
+\end{quote}
+
+\begin{quote}
+Matthews, Suzanne J, Newhall, Tia, and Webb, Kevin C.
+\textit{Dive Into Systems}. Version 1.2. CC BY-NC-ND 4.0.
+\url{https://diveintosystems.org}
+\end{quote}
+
 
 \subsection{Programming Environment}
 
 This course involves programming in both C and assembly language. All
-necessary tools will be available on the department server. All
-software for this course is available free of charge and can be found
+necessary tools will be available on the department server. If the server is
+unavailable and the student does not have access to a suitable development
+environment, then one can be provided by the department. All software for this
+course is available free of charge and can be found
 on the web if students wish to install it on their personal
 machines. The instructor cannot guarantee support for installing and
 using other development environments.
@@ -136,32 +96,37 @@ The course workload is as follows:
 \begin{center}
   \begin{tabular}{ll}
     \underline{Category} & \underline{Number of Assignments} \\
-    Exams & 7 \\
-    Programs & 5 \\
-    Homework & 8
+    Exams & 5-7 \\
+    Programs & 2-3 \\
+    Homework & 6-8 \\
+    Self-Evaluations & 4-5
   \end{tabular}
 \end{center}
 
 \subsection*{Exams}
 
-All exams are weighted equally. There is no midterm or final exam in the sense that the exams are worth more than other exams or that they will necessarily take longer than other exams.  Exams will generally focus on material covered since the previous exam but will be in some sense cumulative due to the nature of programming. \textit{Exams during this semseter will be administered via Moodle and will have fixed time windows during which they can be completed.}
+We'll wrap up most chapters with an exam. Most will be in-class exams. Some will be open-book. Some might even be take home.
 
 \subsection*{Programs}
 
-Several of the chapters will have programming assignments to accompany them. These will be assigned when we begin the chapter and you should start looking at them right away and use them as a motivator for the chapter itself. They will typically be due at the completion of the chapter but before the chapter exam. Programs will be individual efforts.
+A few of the chapters will have programming assignments to accompany them. These will be assigned when we begin the chapter and you should start looking at them right away and use them as a motivator for the chapter itself. They will typically be due at the completion of the chapter but before the chapter exam. Programs will be individual efforts.
 
 \subsection*{Homework}
 
-Students will be assigned a set of problems from each chapter of the book covered in the course. These problems are meant to guide reading, prepare the student for in class problems, and survey the material covered by the exam. \textit{While we are engaging in remote learning, homework problems will be given submitted via Moodle. Some problems will be administered as Moodle Quizzes where others will require submitting written code.}
+Students will be assigned a set of problems from each chapter of the book covered in the course. These problems are meant to guide reading, prepare the student for in class problems, and survey the material covered by the exam.
+
+\subsection*{Self-Evaluation \& Reflections}
+
+Self-reflection and self-evaluation is a critical component of learning and vital to a growth mindset. You'll write a series of self-evaluation letters to me through out the course of the semester. In these letters you'll evaluate the state of your learning, present evidence of successes, examples of ongoing challenges, and address how well you believe you're meeting course and personal goals and expectations. Letters will be one to two pages in length and include a report card maintained by the student. As you'll read below, these letters and the conversations we have as a result of the letters will, by and large, determine your grade in the course.
 
 
 \subsection{Course Engagement Expectations}
 
-The weekly workload for this course will vary by student but on average should be about 13 hours per week.  The follow tables provides a rough estimate of the distribution of this time over different course components.
+The weekly workload for this course will vary by student but on average should be about 12 hours per week.  The follow tables provides a rough estimate of the distribution of this time over different course components.
 \begin{center}
 \begin{tabular}{ll}
 \underline{Assignment Type} & \underline{Time/week} \\
-Lectures+Labs       & 3 hours/week \\
+Lecture/Class      & 3 hours/week \\
 Homework          & 3 hours/week \\
 Exam Study Time    & 1 hours/week \\
 Programs          & 3 hours/week \\
@@ -172,80 +137,91 @@ Reading &  2 hours/week \\
 \end{center}
 
 
-\section{Grades}
+\section{Ungrading \& Final Grades}
 
-This course uses a standard grading scale where percentage grades translate to letter grades as follows:
+This class is largely ungraded. That means your assignments will not be graded for points and your final grade is not determined by a point-based, numerical grading system. You will get feedback on your work but you will see points on nothing. You don't earn points for doing work or getting something correct nor do you lose points for getting something wrong. We're here to learn. Doing the work is how we do that and getting things wrong some or most of the time is part of learning.
 
-\begin{center}
-\begin{small}
-\begin{tabular}{lcl}
-\underline{Score} & & \underline{Grade} \\
-94--100 & & A \\
-90--93 & & A- \\
-88--89 & & B+ \\
-82--87 & & B \\
-80--81 & & B- \\
-78--79 & & C+ \\
-72--77 & & C \\
-70--71 & & C- \\
-68--69 & & D+ \\
-62--67 & & D \\
-60--61 & & D- \\
-0--59 & & F
-\end{tabular}
-\end{small}
-\end{center}
+\subsection{Self-Evaluation \& Final Course Grades}
+
+Throughout the semester you'll be asked to engage in regular self-evaluation. This process is described in detail in additional documentation. Part of the process includes you self-assigning a course grade based on your self-evaluation. Your self-evaluation and self-assigned grade are then discussed with me in a one-on-one meeting during which we'll agree upon your current grade. The key here is that \textit{your self-evaluation and self-assigned grade begins the conversation, not my assigned points.}
+
+Below are some general rules of thumb we'll try to stick to when talking about grades. They relate grades to course competency expectations and Monmouth College policy.
+\begin{itemize}
+  \item \textbf{A} - Exceeding course expectations.
+  \item \textbf{B} - Meeting and occasionally exceeding course expectations.
+  \item \textbf{C} - Meeting course expectations.
+  \item \textbf{C-} - Mostly, but not always meeting course expectations. \textit{This is the minium grade that counts towards the major.}
+  \item \textbf{D} - Occasionally meeting course expectations, but mostly not. \textit{Grades in the D range earn credit towards graduation but fall below GPA requirements.}
+  \item \textbf{F} - Did not meet course expectations.
+\end{itemize}
+
+My hope is that the self-evaluation and self-directed grading process provides a lot of flexibility in terms of how you can achieve success in this course and meet your grade goals. If you ever have questions or concerns about self-evaluations and grades, then I'm more more than willing to discuss them with you at any time.
+
+\subsubsection{Participation, Attendance, \& Timely Work}
+
+I do not have strict attendance and deadline policies, but I do have clear expectations. These expectations that are baked into the disposition attribute of the course competencies. This attribute includes things like being \textit{professional, responsible, responsive, and self-directed.}
+
+As far as I'm concerned, signing up for this class means you agree to coming to class and lab, being on time for class and lab, doing assigned work in a timely manner, and generally participating in all the class has to offer.  That being said, life happens and people have different priorities.  You might need to miss class or extend a deadline.  So long as you communicate with me about it, as a professional would with a co-worker, then we won't have a problem. If you simply skip class without warning, always show up late, or fail to do assigned work in a timely manner, then I expect that those failures to meet dispositional expectations to be reflected in your self-evaluation.
+
+There is one exception to my ``no grade-based policy'' on assignments and deadlines and that is the self-evaluations and reflections. The self-evaluation process is critical to this class and in no way optional. \textbf{If you fail to submit a required self-evaluation and reflection or attend the post-submission meeting, then I reserve to give you a final grade of D or lower for the course.} You'll find I can be pretty relaxed about a lot of other assignments and deadlines, but I draw the line at the self-evaluation process.
 
 
-Students are always welcome to challenge a grade that they feel is unfair or calculated incorrectly.  Mistakes made in the student's favor will never be corrected to lower a grade.  Mistakes not in the student's favor favor will be corrected.  \textit{Basically, after the initial grading, a score can only go up as the result of a challenge.}
+\subsubsection*{Academic Honesty}
+
+You don't learn by trying to pass off someone's work as your own. In an ungraded class it makes even less sense to cheat and steal work from somewhere else.  There are no points, you gain nothing from it and you certainly will learn nothing from it. In this ungraded class, academic dishonesty is still not tolerated.
+
+From the Monmouth College Academic Honesty Policy:
+\begin{quote}
+  ``We view academic dishonesty as a threat to the integrity and intellectual mission of our institution. Any breach of the academic honesty policy - either intentionally or unintentionally - will be taken seriously and may result not only in failure in the course, but in suspension or expulsion from the college. It is each student’s responsibility to read, understand and comply with the general academic honesty policy at Monmouth College, as defined here in the Scots Guide, and to the specific guidelines for each course, as elaborated on the professor’s syllabus.''
+
+  ``The following areas are examples of violations of the academic honesty policy:
+  \begin{enumerate}
+  \item Cheating on tests, labs, etc;
+  \item Plagiarism, i.e., using the words, ideas, writing, or work of another without giving appropriate credit;
+  \item Improper collaboration between students, i.e., not doing one’s own work on outside assignments specified as group projects by the instructor;
+  \item Submitting work previously submitted in another course, without previous authorization by the instructor.''
+  \end{enumerate}
+
+  ``Please note that this list is not intended to be exhaustive.''
+\end{quote}
+
+The complete Monmouth College Academic Honesty Policy can be found on the College web page by clicking on ``Student Life'' then on ``Scot’s Guide'' in the navigation bar to the left, then ``Academic Regulations'' in the navigation bar at the left.  Or you can visit the web page directly by typing in this URL: \url{https://ou.monmouthcollege.edu/life/residence-life/scots-guide/academic-regulations.aspx}
+
+In this course, any violation of the academic honesty policy will have varying consequences depending on the severity of the infraction as judged by the instructor.  Expect violations to be reported to the appropriate Dean and to weaken your case for higher grades at the end of the course. Severe violations can result in an F for the course and expulsion from the course. Do your own work. If you even think something you're doing could be construed as academically dishonest, then ask for guidance and clarification first.
 
 
+\section{Academic Support \& Accessibility}
 
-\subsection{Grade Weights}
+\subsection*{Support Services}
+The Academic Support and Accessibility Services Office offers free resources to assist Monmouth College students with their academic success. Programs include Supplemental Instruction for difficult classes, Drop-In and appointment tutoring, and individual Academic Coaching. Our office is here to help all students excel academically, since every student can work toward better grades, practice stronger study skills, and manage their time better. Please email academicsupport@monmouthcollege.edu for assistance.
 
-The final grade is based on a weighted average of particular assignment categories.  Students should be able to estimate your current grade based on your scores and these weights, but you may always visit the instructor \textit{outside of class time} to discuss your current standing and check on some or all of the current course grade.
+\subsection*{Accessibility Services}
+If you have a disability and/or medical/mental health condition or had academic accommodations in high school or another college, you may be eligible for academic accommodations at Monmouth College under the Americans with Disabilities Act (ADA). Monmouth College is committed to equal educational access. To discuss any of the services offered, please call or meet with Jennifer Sanberg, Associate Director of Academic Support and Accessibility Services. The ASAS office is located on the first floor of the Hewes Library, opposite Einstein’s Bros Bagel. They can be reached at 309-457-2257 or via email at: academicsupport@monmouthcollege.edu
 
-\begin{center}
-  \begin{tabular}{ll}
-  \underline{Category} & \underline{Weight} \\
-    Exams & 35\% \\ %5 each
-    Programs & 30\% \\ %6 each
-    Homework & 20\% \\ %2.5 each
-    Participation & 15\%
-  \end{tabular}
-\end{center}
-
-\subsection*{Participation \& Attendance}
-
-Participation grades will be determined based largely on the completion of reading quizzes that come along
-with the daily reading and video assignments. Class attendance will be monitored via Zoom. Repeated unexcused absenses will have a negative effect on your participation grade. Whenever possible, let the instructor know of the absence before it occurs. When unexcused absences do occur, it is the student's responsibility to make up for the lost class time and to seek the permission of the instructor to hand-in or complete assignments that are late due to an unexcused absence.
-
-\subsection*{Late Work}
-
-In general, assignments are due at the specified time and no late assignments will be accepted unless an extension was requested prior to the due date. There are, of course, exceptions to this rule and students needing extra time can always contact the instructor for an extension. Do not just give up and eat a zero for the assignment. Ever. There is no penalty in asking for an extension nor is there a limit on extensions.  That being said, there is no guarantee an extension will be given without legitimate need.
 \subsection{Calendar}
 
 \textit{This calendar is subject to change based on the circumstances of the course.} A detailed, day-by-day calendar of reading requirements and expected exam dates can be found on the course website.
 
 \begin{center}
 \begin{tabular}{llll}
-\underline{Week} & \underline{Dates} & \underline{Assignments Due} & \underline{Chapter(s)}\\
-1 & 8/18--8/21  &  & Ch. 1. Linux \& C \\
-2 & 8/24--8/28 &  &  Linux \& C \\
-3 & 8/31--9/4 &  &  Ch 2 \\
-4 & 9/7--9/11  & Program 1 &  Ch 2 \\
-5 & 9/14--9/18 & Exam 1 & Ch 3 \\
-6 & 9/21--9/25 & Program 2 & Ch 3 \\
-7 & 9/28--10/2 & Exam 2  &  Ch 5 \\
-8 & 10/5--10/9 & & Program 3 Ch 5 \\
-9 & 10/12--10/16 & Exam 3 &  Ch 6 \\
-10 & 10/19--10/23  & Program 4 & Ch 6 \\
-11 & 10/26--10/30 & Exam 4 &  Ch 7 \\
-12 & 11/2--11/6 & Exam 5 & Ch 9 \\
-13 & 11/9--11/13 &  Program 5. & Ch 9 \\
-14 & 11/16--11/20 & Exam 6. & Ch 8 \\
-15 & 11/23--11/24 &  THANKSGIVING (W-F)  &  Ch 8 \\
-16 & 11/30--12/4 & Exam 7 &  \\
+\underline{Week} & \underline{Dates} & \underline{Major Assignments} & \underline{Chapter(s)}\\
+1 & 8/23--8/25  &  & Ch. 1. Linux \& C \\
+2 & 8/28--9/1 &  &  Linux \& C \\
+3 & 9/4--9/8 & (LABOR DAY M. NO CLASS). Linux/C Exam &  Linux \& C \\
+4 & 9/11--9/15  & NO CLASS FRIDAY &  Ch 2 \\
+5 & 9/18--9/22 & Ch. 2 Hwk. Ch 2 Exam. & Ch 3 \\
+6 & 9/25--9/29 &  & Ch 3 \\
+7 & 10/2--10/6 & Ch 3 Hwk. &  Ch 5 \\
+8 & 10/9--10/11 & Program 1 Due. Ch 3 Exam. FALL BREAK (Th-F) & \\
+9 & 10/16--10/20 & NO CLASS MONDAY. Ch 5 Hwk. &  Ch 6 \\
+10 & 10/23--10/27  & Ch 5 Exam.  & Ch 6 \\
+11 & 10/30--11/3 & Ch 6 Hwk. &  Ch 6 \\
+12 & 11/6--11/10 & Program 2 Due. Ch 6 Exam.  & Ch 9 \\
+13 & 11/13--11/17 &  & Ch 9 \\
+14 & 11/20--11/21 & THANKSGIVING (W-F). & Ch 9 \\
+15 & 11/27--12/1 & Ch 9 Hwk. Ch 9 Exam.  &  Ch 9. Ch 7,8 \\
+16 & 12/4--12/6 & & Ch 7,8 \\
+17 & 12/11 & FINAL Exam Mon., 8-11am & \\
 \end{tabular}
 \end{center}
 
