@@ -10,7 +10,7 @@
 
 \title{Syllabus \\ COMP 235 \\ Introduction to Systems Programming}
 \author{  }
-\date{Fall 2023}
+\date{Fall 2024}
 
 \begin{document}
 \maketitle
@@ -25,7 +25,7 @@
 \item \textit{Phone: } 309-457-2200 % chktex 8
 \item \textit{Website: } \url{http://jlmayfield.github.io/}
 \item \textit{Email: } lmayfield \textit{at} monmouthcollege \textit{dot} edu
-\item \textit{Office Hours: }  M 2-3pm. TuTh 10-11 am. F 11am-12pm. By appointment.
+\item \textit{Office Hours: }  M 9-10am. Tu, 10:30am - 11:30am. W, 2-3pm. Th, 10:30-11:30am. F, 2-3pm. By appointment.
 \end{itemize}
 \item \textbf{Website: } \url{http://jlmayfield.github.io/teaching/COMP235/}
 \item \textbf{Credits: } 1 course credit
@@ -45,31 +45,21 @@ optimization, and concurrency.
 
 The goal of this course is to produce programmers who understand how
 the correctness and performance of their applications are impacted by
-the compilation system, operating system, and hardware. After
-dedicating some time to learning C, the course aims to cover the
-majority of chapters 1-9 of the text.
+the compilation system, operating system, and hardware. The course will
+cover the following chapters of the text:
 
 \begin{center}
 \begin{tabular}{ll}
-\(\bullet\) Basics of C & \(\bullet\) Basics of the CLI \\
-\(\bullet\) Tour of Systems (ch 1) & \(\bullet\) Data Representations (ch 2)\\
-\(\bullet\) Machine Language (ch 5) & \(\bullet\) Code Optimization (ch 5) \\
-\(\bullet\) The Memory Hierarchy (ch 6) & \(\bullet\) Virtual and Dynamic Memory (ch 9) \\
-\(\bullet\) Exceptional Control Flow (as time allows) (ch 8) & \(\bullet\) Linking (ch 7)\\
+\(\bullet\) Intro to C (ch 1) & \(\bullet\) Basics of the CLI (App 2) \\
+\(\bullet\) C in Depth (ch 2) & \(\bullet\) C Debugging (ch 3) \\
+\(\bullet\) Data Representations (ch 4) & Assembly Programming (ch 6,7, \& 10) \\
+\(\bullet\) Computer Architecture (ch 5) & \(\bullet\) The Memory Hierarchy (ch 11) \\
+\(\bullet\) The Operating System (ch 13) & \(\bullet\) Virtual and Dynamic Memory (ch 14) \\
+\(\bullet\) \(\bullet\) Parallelization (ch 15) & \\
 \end{tabular}
 \end{center}
 
 \subsection{Textbook}
-
-\begin{quote}
-Bryant, Randal E. and O'Hallaron, Davir R.
-\textit{Computer Systems: A Programmer's Perspective}. 3rd Edition. Pearson. 2016. ISBN-13: 978-0134092669.
-\end{quote}
-
-\begin{quote}
-Shotts, William E., \textit{Learning the Shell}. 2000-2023, William E. Shotts, Jr.
-\url{https://linuxcommand.org/lc3_learning_the_shell.php}
-\end{quote}
 
 \begin{quote}
 Matthews, Suzanne J, Newhall, Tia, and Webb, Kevin C.
@@ -80,14 +70,13 @@ Matthews, Suzanne J, Newhall, Tia, and Webb, Kevin C.
 
 \subsection{Programming Environment}
 
-This course involves programming in both C and assembly language. All
-necessary tools will be available on the department server. If the server is
-unavailable and the student does not have access to a suitable development
-environment, then one can be provided by the department. All software for this
-course is available free of charge and can be found
-on the web if students wish to install it on their personal
-machines. The instructor cannot guarantee support for installing and
-using other development environments.
+This course involves programming in both C and assembly language. By and large, all
+necessary tools will be available on the department server, but students will be encouraged to work via \textit{SSH} using \textit{VS Code} on their personal machine.  If the server is unavailable and the student does not have access to a suitable development environment, then one can be provided by the department. All software for this course is available free of charge and can be found on the web if students wish to install it on their personal machines. The instructor cannot guarantee support for installing and using other development environments.
+
+\begin{itemize}
+  \item VS Code : \url{https://code.visualstudio.com/}
+  \item Instructions for SSH+VS-Code Integration : \url{https://code.visualstudio.com/docs/remote/ssh-tutorial}
+\end{itemize}
 
 \section{Workload}
 % number of/details on midterms, finals, project, homeworks, quizes, etc
@@ -97,9 +86,9 @@ The course workload is as follows:
   \begin{tabular}{ll}
     \underline{Category} & \underline{Number of Assignments} \\
     Exams & 5-7 \\
-    Programs & 2-3 \\
-    Homework & 6-8 \\
-    Self-Evaluations & 4-5
+    Project & 1 \\
+    Homework & 4-6 \\
+    Portfolio Review \& Self Evaluation Meetings & 4-5
   \end{tabular}
 \end{center}
 
@@ -107,64 +96,91 @@ The course workload is as follows:
 
 We'll wrap up most chapters with an exam. Most will be in-class exams. Some will be open-book. Some might even be take home.
 
-\subsection*{Programs}
+\subsection*{Project}
 
-A few of the chapters will have programming assignments to accompany them. These will be assigned when we begin the chapter and you should start looking at them right away and use them as a motivator for the chapter itself. They will typically be due at the completion of the chapter but before the chapter exam. Programs will be individual efforts.
+When learning the C programming language, we'll do a programming project in lieu of an exam. The program will be an individual effort and the majority of the work on the project will be carried out outside of class. 
 
 \subsection*{Homework}
 
 Students will be assigned a set of problems from each chapter of the book covered in the course. These problems are meant to guide reading, prepare the student for in class problems, and survey the material covered by the exam.
 
-\subsection*{Self-Evaluation \& Reflections}
+\subsection*{Portfolio Review \& Self-Evaluation}
 
-Self-reflection and self-evaluation is a critical component of learning and vital to a growth mindset. You'll write a series of self-evaluation letters to me through out the course of the semester. In these letters you'll evaluate the state of your learning, present evidence of successes, examples of ongoing challenges, and address how well you believe you're meeting course and personal goals and expectations. Letters will be one to two pages in length and include a report card maintained by the student. As you'll read below, these letters and the conversations we have as a result of the letters will, by and large, determine your grade in the course.
+Self-reflection and self-evaluation is a critical component of learning and vital to a growth mindset.
+We will keep a portfolio of the work you do throughout the semester. Much of this will be done automatically
+by our assignment managment and version control software. At regular intervals throughout the semester you will
+meet, one-on-one, with me to \textit{present your porfolio}, review items from your porfolio that best 
+guage how well you're doing at meeting the course goals and expectations, and discuss how that success maps to 
+a letter grade. For more details about the process visit \url{https://jlmayfield.github.io/teaching/ungrading/howto-portfolio}.
 
 
 \subsection{Course Engagement Expectations}
 
-The weekly workload for this course will vary by student but on average should be about 12 hours per week.  The follow tables provides a rough estimate of the distribution of this time over different course components.
+The weekly workload for this course will vary by student but on average should be about 10.5 hours per week.  The follow tables provides a rough estimate of the distribution of this time over different course components.
 \begin{center}
 \begin{tabular}{ll}
 \underline{Assignment Type} & \underline{Time/week} \\
 Lecture/Class      & 3 hours/week \\
-Homework          & 3 hours/week \\
+Homework          & 3.5 hours/week \\
 Exam Study Time    & 1 hours/week \\
-Programs          & 3 hours/week \\
-Reading &  2 hours/week \\
+Programs          & .5 hours/week \\
+Reading &  2.5 hours/week \\
 \bottomrule
- & 12 hours/week
+ & 10.5 hours/week
 \end{tabular}
 \end{center}
 
 
 \section{Ungrading \& Final Grades}
 
-This class is largely ungraded. That means your assignments will not be graded for points and your final grade is not determined by a point-based, numerical grading system. You will get feedback on your work but you will see points on nothing. You don't earn points for doing work or getting something correct nor do you lose points for getting something wrong. We're here to learn. Doing the work is how we do that and getting things wrong some or most of the time is part of learning.
+This class is largely ungraded. That means your assignments will not be graded for points and your final grade
+is not determined by a point-based, numerical grading system. You will get feedback on your work but you will
+see points on nothing. You don't earn points for doing work or getting something correct nor do you lose points
+for getting something wrong. We're here to learn. Doing the work is how we do that and getting things wrong
+some or most of the time is part of learning. For more details visit \url{https://jlmayfield.github.io/teaching/ungrading/howto-portfolio}.
 
 \subsection{Self-Evaluation \& Final Course Grades}
 
-Throughout the semester you'll be asked to engage in regular self-evaluation. This process is described in detail in additional documentation. Part of the process includes you self-assigning a course grade based on your self-evaluation. Your self-evaluation and self-assigned grade are then discussed with me in a one-on-one meeting during which we'll agree upon your current grade. The key here is that \textit{your self-evaluation and self-assigned grade begins the conversation, not my assigned points.}
+Throughout the semester you'll be asked to engage in regular self-evaluation. This process is described in
+detail in additional documentation. Part of the process includes you self-assigning a course grade based on
+your self-evaluation. Your self-evaluation and self-assigned grade are then discussed with me in a one-on-one
+meeting during which we'll agree upon your current grade. The key here is that \textit{your self-evaluation
+and self-assigned grade begins the conversation, not my assigned points.}
 
-Below are some general rules of thumb we'll try to stick to when talking about grades. They relate grades to course competency expectations and Monmouth College policy.
+Below are some general rules of thumb we'll try to stick to when talking about grades. They relate grades to
+course competency expectations and Monmouth College policy.
 \begin{itemize}
   \item \textbf{A} - Exceeding course expectations.
   \item \textbf{B} - Meeting and occasionally exceeding course expectations.
-  \item \textbf{C} - Meeting course expectations.
-  \item \textbf{C-} - Mostly, but not always meeting course expectations. \textit{This is the minium grade that counts towards the major.}
+  \item \textbf{C} - Meeting course expectations. \textit{This is the minimum grade required to continue on to COMP152. So, a C means you can be successful in a class that builds upon the things learned in this class.}
+  \item \textbf{C-} - Mostly meeting course expectations. \textit{This is the minium grade that counts towards a major.}
   \item \textbf{D} - Occasionally meeting course expectations, but mostly not. \textit{Grades in the D range earn credit towards graduation but fall below GPA requirements.}
   \item \textbf{F} - Did not meet course expectations.
 \end{itemize}
 
-My hope is that the self-evaluation and self-directed grading process provides a lot of flexibility in terms of how you can achieve success in this course and meet your grade goals. If you ever have questions or concerns about self-evaluations and grades, then I'm more more than willing to discuss them with you at any time.
+My hope is that the self-evaluation and self-directed grading process provides a lot of flexibility in terms
+of how you can achieve success in this course and meet your grade goals. If you ever have questions or concerns
+about self-evaluations and grades, then I'm more more than willing to discuss them with you at any time.
 
 \subsubsection{Participation, Attendance, \& Timely Work}
 
-I do not have strict attendance and deadline policies, but I do have clear expectations. These expectations that are baked into the disposition attribute of the course competencies. This attribute includes things like being \textit{professional, responsible, responsive, and self-directed.}
+I do not have strict attendance and deadline policies, per se, but I do have clear expectations. These
+expectations are baked into the dispositional attribute of the course competencies. This attribute
+includes things like being \textit{professional, responsible, responsive, and self-directed.}
 
-As far as I'm concerned, signing up for this class means you agree to coming to class and lab, being on time for class and lab, doing assigned work in a timely manner, and generally participating in all the class has to offer.  That being said, life happens and people have different priorities.  You might need to miss class or extend a deadline.  So long as you communicate with me about it, as a professional would with a co-worker, then we won't have a problem. If you simply skip class without warning, always show up late, or fail to do assigned work in a timely manner, then I expect that those failures to meet dispositional expectations to be reflected in your self-evaluation.
+As far as I'm concerned, signing up for this class means you agree to coming to class and lab,
+being on time for class and lab, doing assigned work and submitting it on time, and generally participating
+in all the class has to offer.  That being said, life happens and people have different priorities.
+You might need to miss class or extend a deadline.  So long as you communicate with me about it, as a
+professional would with a co-worker, then we won't have a problem. If you simply skip class without
+warning, always show up late, or regularly fail to do assigned work in a timely manner, then I expect that
+those failures to meet dispositional expectations to be reflected in your self-evaluation.
 
-There is one exception to my ``no grade-based policy'' on assignments and deadlines and that is the self-evaluations and reflections. The self-evaluation process is critical to this class and in no way optional. \textbf{If you fail to submit a required self-evaluation and reflection or attend the post-submission meeting, then I reserve to give you a final grade of D or lower for the course.} You'll find I can be pretty relaxed about a lot of other assignments and deadlines, but I draw the line at the self-evaluation process.
-
+There is one exception to my ``no grade-based policy'' on assignments and deadlines and that is the
+self-evaluations and reflections. The self-evaluation process is critical to this class and in no way
+optional. \textbf{If you fail attend the portfolio review meetings or always show up completely un-prepared
+then I reserve to give you a final grade of D or lower for the course.} You'll find I can be pretty relaxed
+about a lot of other assignments and deadlines, but I draw the line at the self-evaluation process.
 
 \subsubsection*{Academic Honesty}
 
@@ -185,8 +201,6 @@ From the Monmouth College Academic Honesty Policy:
   ``Please note that this list is not intended to be exhaustive.''
 \end{quote}
 
-The complete Monmouth College Academic Honesty Policy can be found on the College web page by clicking on ``Student Life'' then on ``Scot’s Guide'' in the navigation bar to the left, then ``Academic Regulations'' in the navigation bar at the left.  Or you can visit the web page directly by typing in this URL: \url{https://ou.monmouthcollege.edu/life/residence-life/scots-guide/academic-regulations.aspx}
-
 In this course, any violation of the academic honesty policy will have varying consequences depending on the severity of the infraction as judged by the instructor.  Expect violations to be reported to the appropriate Dean and to weaken your case for higher grades at the end of the course. Severe violations can result in an F for the course and expulsion from the course. Do your own work. If you even think something you're doing could be construed as academically dishonest, then ask for guidance and clarification first.
 
 
@@ -203,25 +217,25 @@ If you have a disability and/or medical/mental health condition or had academic 
 \textit{This calendar is subject to change based on the circumstances of the course.} A detailed, day-by-day calendar of reading requirements and expected exam dates can be found on the course website.
 
 \begin{center}
-\begin{tabular}{llll}
-\underline{Week} & \underline{Dates} & \underline{Major Assignments} & \underline{Chapter(s)}\\
-1 & 8/23--8/25  &  & Ch. 1. Linux \& C \\
-2 & 8/28--9/1 &  &  Linux \& C \\
-3 & 9/4--9/8 & (LABOR DAY M. NO CLASS). Linux/C Exam &  Linux \& C \\
-4 & 9/11--9/15  & NO CLASS FRIDAY &  Ch 2 \\
-5 & 9/18--9/22 & Ch. 2 Hwk. Ch 2 Exam. & Ch 3 \\
-6 & 9/25--9/29 &  & Ch 3 \\
-7 & 10/2--10/6 & Ch 3 Hwk. &  Ch 5 \\
-8 & 10/9--10/11 & Program 1 Due. Ch 3 Exam. FALL BREAK (Th-F) & \\
-9 & 10/16--10/20 & NO CLASS MONDAY. Ch 5 Hwk. &  Ch 6 \\
-10 & 10/23--10/27  & Ch 5 Exam.  & Ch 6 \\
-11 & 10/30--11/3 & Ch 6 Hwk. &  Ch 6 \\
-12 & 11/6--11/10 & Program 2 Due. Ch 6 Exam.  & Ch 9 \\
-13 & 11/13--11/17 &  & Ch 9 \\
-14 & 11/20--11/21 & THANKSGIVING (W-F). & Ch 9 \\
-15 & 11/27--12/1 & Ch 9 Hwk. Ch 9 Exam.  &  Ch 9. Ch 7,8 \\
-16 & 12/4--12/6 & & Ch 7,8 \\
-17 & 12/11 & FINAL Exam Mon., 8-11am & \\
+\begin{tabular}{lllll}
+\underline{Week} & \underline{Dates} & \underline{Major Assignments} & \underline{Chapter(s)} & \underline{Notes} \\
+1 & 8/21--8/23  &  & Ch 4 & \\
+2 & 8/26--8/30 &  & Ch 4 & \\
+3 & 9/2--9/6 & Ch 4 Hwk & Ch 4, Ch 5 & NO CLASS M. - Labor Day. \\
+4 & 9/9--9/13  & Ch 4 Exam & Ch 5 &  \\
+5 & 9/16--9/20 & Ch 5 Hwk & Ch 5, Ch 1 & \\
+6 & 9/23--9/27 & Ch 5 Exam &  & Ch 1\\
+7 & 9/30--10/4 & Ch 1 Hwk & & Ch 1 \\
+8 & 10/7--10/9 & Ch 1 Mini-Exam & Ch 1, Ch 2 & FALL BREAK Th-F  \\
+9 & 10/14--10/18 &  &  & Ch 2\\
+10 & 10/21--10/25 &  &  & Ch 3, Ch 6\\
+11 & 10/28--11/1 & C Project & Ch 7 &  \\
+12 & 11/4--11/8 & Ch 7 Hwk & Ch 7, Ch 10 & \\
+13 & 11/11--11/15 & Ch 7 Exam &  & Ch 11 \\
+14 & 11/18--11/22 & Ch 11 Hwk & & Ch 11\\
+15 & 11/25--11/26 & & Ch 11 & THANKSGIVING W-F \\
+16 & 12/2--12/6 & Ch 11 Exam & & NO CLASS F. - Reading Day Th.\\
+17 & 12/7 & Final Exam. Sat. 12/7 6:30 -- 9:30 pm & &  \\
 \end{tabular}
 \end{center}
 
