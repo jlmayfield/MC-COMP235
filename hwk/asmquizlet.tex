@@ -1,0 +1,48 @@
+\documentclass[nobib]{tufte-handout}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP 235 --- Assembly Quizlet}
+\author{  }
+\date{ }
+ 
+
+\begin{document}
+\maketitle
+
+You've been given a short C program along with the assembly generated from that file. Analyze the assembly and determine the answers to the following:
+
+\begin{enumerate}
+    \item For \textit{main}
+    \begin{enumerate}
+        \item attribute all lines of assembly to line of C or to function call prologue and epilogue code done at the assembly level. Label assembly line numbers with C line numbers.  
+        \item determine the size of the stack frame in bytes
+        \item determine the location within the frame for each of the 3 arrays. List the locations relative to \%rbp. For example, $\left[-10,-5\right]$ would refer to bytes \%rbp-10 through \%rbp-5. 
+        \item draw a diagram showing how each byte of the stack frame is used. If bytes are allocated on the stack but not directly used, label them as unused. 
+        \item determine the primary operand specifier for the variables A, B, and C. 
+    \end{enumerate}
+    \item For \textit{initAll}
+    \begin{enumerate}
+        \item attribute all lines of assembly to line of C or to function call prologue and epilogue code done at the assembly level. Label assembly line numbers with C line numbers. 
+        \item determine how much stack space is used
+        \item determine the primary operand specifier for variables a,b,c,i, and j. 
+    \end{enumerate}
+    \item For \textit{matmul}
+    \begin{enumerate}
+        \item attribute all lines of assembly to line of C or to function call prologue and epilogue code done at the assembly level. Label assembly line numbers with C line numbers. 
+        \item determine how much stack space is used
+        \item determine the primary operand specifier for variables a,b,c,i,j, and k
+    \end{enumerate}
+    
+\end{enumerate}
+
+We'll spend some time in class getting started on this. This exercise is open book, open notes, open professor, open classmates, but not open internet. Do not consult with AI. 
+
+\end{document}
