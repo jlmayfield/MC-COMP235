@@ -1,0 +1,90 @@
+\documentclass[nobib]{tufte-handout}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP 235 --- Homework --- Ch 4.6 -- }
+\author{  }
+\date{ }
+ 
+
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+    \item Consider the following bytes: $x = 0xE4$, $y = 0x6B$, $z=0xF1$.  Compute the following. Show work. 
+    \begin{enumerate}
+        \item $\sim$y
+        \vspace{1.5in}
+        \item x \& z
+        \vspace{1.5in}
+        \item y \^{} x
+        \vspace{1.5in} 
+        \item z | y
+        \vspace{1.5in}
+        \item $\sim$(y \& z)
+        \newpage \thispagestyle{empty}
+        \item z << 4
+        \vspace{1.5in}
+        \item y >> 3 (arithmetic)
+        \vspace{1.5in}
+        \item z >> 4 (arithmetic)          
+        \vspace{1.5in}
+        \item z >> 4 (logical)         
+        \vspace{1.5in}
+        \item (y << 7) >> 7 (arithmetic)
+    \end{enumerate}
+    \newpage
+    \thispagestyle{empty}
+
+    \item Convert the following binary values to decimal.
+    \begin{enumerate}
+        \item 1011.011010
+        \vspace{2in}
+        \item 0.1101
+        \vspace{2in}
+        \item 10.001001001
+        \newpage \thispagestyle{empty}
+    \end{enumerate}
+    \item Convert the following binary numbers to normalized (leading 1) scientific notation. 
+    \begin{enumerate}
+        \item 1011.001 
+        \vspace{2in}
+        \item 0.001001
+        \vspace{2in}
+        \item 11.010
+        \vspace{2in}
+        \item 0.011111
+        \newpage \thispagestyle{empty}        
+    \end{enumerate}
+    \item For simplicity sake, let's consider a 17 bit floating point notation that is the same as what we get in the book but with only 1 byte for the significand. So that is 1 bit for the sign, 1 byte for the exponent (with a bias of 127), and 1 byte for the significand. For each of the following bit strings, list the binary number it represents in scientific notation and the value in decimal. 
+    \begin{enumerate}
+        \item 1 00010110 00001110
+        \vspace{2in}
+        \item 0 11010011 11011111 
+        \vspace{2in} 
+    \end{enumerate} 
+    \item Give the binary string to represent the following binary values using the same 17 bit floating point number representation listed above.
+    \begin{enumerate}
+        \item $110.111$
+        \vspace{2in}
+        \item $-1.011 \times 2^{27}$
+        \newpage \thispagestyle{empty}
+    \end{enumerate}
+    \item (Bonus!?) Show how to represent these decimal values using the 17 bit floating point representation from the previous problem. 
+    \begin{enumerate}
+        \item -13.6875
+        \vspace{2in}
+        \item 0.087890625
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
